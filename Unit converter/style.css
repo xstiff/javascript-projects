@@ -1,0 +1,87 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+html {
+    display: table;
+}
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+.box {
+    
+    margin: 0 auto;
+    width: 700px;
+    height: 700px;
+    
+    text-align: center;
+    overflow: hidden;
+
+}   
+
+.box .hbox {
+    background: linear-gradient(246.26deg, #585DFE 0%, #FB3796 100%);
+    height: 35%;
+    width: 95%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin: 0 auto;
+}
+
+.box .sndbox{
+    height: 65%;
+    width: 95%;
+
+
+    margin: 0 auto;
+    overflow: hidden;
+    background: #1F2937;
+
+}
+.box h1 {
+    color:white;
+    padding-top: 50px;
+}
+
+.in {
+    height: 100px;
+    width: 70%;
+    font-size: 30px;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 10px;
+    background-color: transparent;
+    color:white;
+    border:none;
+    text-decoration: underline;
+    user-select: none;
+    outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.sndbox h3 {
+    color:white;
+    padding: 14px 16 px;
+    font-size: 1.5em;
+}
+
+.sndbox p {
+    color:rgb(200,200,200);
+    font-size: 1.2rem;
+}
