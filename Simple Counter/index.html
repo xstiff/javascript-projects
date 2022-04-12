@@ -6,5 +6,36 @@
   </head>
   <body>
     
+    <style media="screen">
+      * {
+        font-family: sans-serif;
+      
+        }
+        body {
+          text-align:center;
+        }
+      .btn {
+        background-color:yellowgreen;
+        border:0;
+        border-radius: 15px;
+        padding: 14px 16px;
+        font-size:25px;
+        margin-bottom: 10px;
+      }
+      
+      #l-counting{ color:red;}
+    </style>
+    
+    <h1> Im counting: <a id="l-counting">0</a></h1>
+    <button type="button" name="button" onClick="add()" class='btn'>Add</button>
+    <button type="button" name="button" onClick="remove()" class='btn'>Subtract</button>
+    <br>
+    <button type="button" name="button" onClick="save()" class='btn'>Save</button>
+    <button type="button" name="button" onClick="load()" class='btn'>Load</button>
+    <br>
+    <button type="button" name="button" onClick="reset()" class='btn'>Reset</button>
+
+
+    <script src="index.js"></script>
   </body>
 </html>
