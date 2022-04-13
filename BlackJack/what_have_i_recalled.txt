@@ -1,0 +1,9 @@
+1. Arrays
+2. Objects
+3. Booleans
+4. Statements
+5. Operators
+6. Simple loops
+7. Math Object
+    - Random numbers
+8. Return statements
