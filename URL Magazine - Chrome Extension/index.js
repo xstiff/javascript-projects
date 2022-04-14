@@ -57,24 +57,35 @@ function render() {
     list_holder = get_local();
 
     for(let x=0; x<list_holder.length; x++){
-        list_items += 
-        `
-            <li>
-                <a href="${list_holder[x]}" target="_blank">
-                    ${list_holder[x]}
-                </a>
-                <button id="remove-btn" onclick="remove_element(${x});">
-                    Delete
-                </button>
-            </li>
-        `
-        
+        the_item = `
+        <li>
+
+            <a href="${list_holder[x]}" target="_blank">
+            ${list_holder[x]}
+            </a>
+            <button id="remove-btn" class="button-${x}" style="margin-right:10px;"> 
+            Delete
+        </button>
+
+            
+        </li>
+        `//<button id="remove-btn" onclick="remove_element(${x});">
+        list_items += the_item
+    }
+    ulel.innerHTML = list_items;
 
 
 
+    for(let x=0; x<list_holder.length; x++){
+        query_item = document.querySelector(".button-" + x)
+        console.log(query_item)
+        console.log("Adding listnener to: " + query_item)
+        query_item.addEventListener("click", function() {
+            remove_element(x);
+        })
+        console.log("Added listner to: " + query_item)
     }
 
-    ulel.innerHTML = list_items;
 
 }
 function get_local() {

@@ -5,8 +5,8 @@ body {
     margin:0;
     padding:10px;
     font-family: 'Roboto', sans-serif;
-    min-width: 400px;
-    
+    width:600px;
+
 }
 
 html * , body * {
@@ -46,22 +46,32 @@ input {
 ul {
     list-style: none;
     margin-top: 20px;
+    max-width: 580px;
+    
 }
 li {
     margin-top: 6px;
+    max-width: 580px;
+    box-sizing: border-box;
     
 }
 
 li a {
-
     color:#5f9341;
     font-size: 20px;
     line-height: 25px;
     font-weight: 600;
-}
+    overflow: hidden;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  	width:400px;
+    }
 
 #remove-btn {
-    width:auto;
+
     font-size: 18px;
     outline:none;
     border:none;
@@ -72,8 +82,18 @@ li a {
     margin-left: 15px;
     height: 25px;
     cursor: pointer;
+    overflow: hidden;
+    width:auto;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    float:left;
+    box-sizing: border-box;
+    width:100px;
 }
 
 #remove-btn:hover {
     transform:scale(1.05);
 }
+
+
