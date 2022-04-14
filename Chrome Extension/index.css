@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;0,900;1,500&display=swap');
+
+
+body {
+    margin:0;
+    padding:10px;
+    font-family: 'Roboto', sans-serif;
+    min-width: 400px;
+    
+}
+
+html * , body * {
+    transition: all ease-in-out 0.15s;
+}
+
+input {
+    font-size: 16px;
+    padding:10px;
+    width:100%;
+    box-sizing: border-box;
+    border: 2px solid #5f9341;
+    outline: none;
+    font-weight: 700;
+}
+
+#input-btn, #tab-btn {
+    outline: none;
+    border:none;
+    background-color: #5f9341;
+    padding: 14px 16px;
+    text-transform:uppercase;
+    color:white;
+    font-weight: 800;
+    min-width: 15%;
+    font-size: 18px;
+    box-sizing: border-box;
+    margin-top: 15px;
+    cursor: pointer;
+    
+}
+
+#input-btn:hover, #tab-btn:hover {
+    transform: scale(1.05);
+}
+
+ul {
+    list-style: none;
+    margin-top: 20px;
+}
+li {
+    margin-top: 6px;
+    
+}
+
+li a {
+
+    color:#5f9341;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 600;
+}
+
+#remove-btn {
+    width:auto;
+    font-size: 18px;
+    outline:none;
+    border:none;
+    background-color:#5f9341;
+    color:white;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: 15px;
+    height: 25px;
+    cursor: pointer;
+}
+
+#remove-btn:hover {
+    transform:scale(1.05);
+}
