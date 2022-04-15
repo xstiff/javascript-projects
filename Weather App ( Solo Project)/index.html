@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="menu"> <!-- Stick to top, always visible -->
+        <div class="menu-logo"><i class="fa-solid fa-cloud"></i> <a href="#">The Weather App</a></div>
+            <ul>
+                <li>    <a href="#">POLAND</a>    </li>
+                <li>    <a href="#">WORLD</a>    </li>
+                <li>    <a href="#">NEWS</a>    </li>
+                <li>    <a href="#">AIR QUALITY</a>    </li>
+                <li>    <a href="#">TRAVELLING</a>    </li>
+                <li>    <a href="#">EMAIL</a>    </li>
+            </ul>
+    </div>
+
+    <div class="content">
+        <div class="top">
+            <div class="header">
+                <div class="top-header">
+                    <div class="h-left"><span id="city-name">Warszawa</span></div>
+                    
+                    <div class="h-right"><input id="city-input" type="text" placeholder="Enter city name"><button id="search-city"><i class="fa-solid fa-magnifying-glass"></i></button></div>
+                </div>
+                <div class="bottom-header">
+
+                    <div class="bot-left-full"> 
+                        <p class="temp-now"><i class="fa-solid fa-sun"></i> 36°C </p>
+                    </div>
+
+                    <div class="bot-right-top">
+                        <p class="preasure-now">PRESURE</br>1023 hPa</p>
+                        <p class="wind-now">WIND</br>9 km/h</p>
+                    </div>
+
+                    <div class="bot-right-bottom">
+                        <p class="air-now">AIR QUALITY</br> Good</p>
+                    </div>
+
+                    
+                </div>
+            </div>
+
+
+            <div class="middle-content">
+                <div class="box1">
+                    <p class="box-header">Morning</p>
+                    <p class="box-temp">26°C</p>
+                    <p class="box-icon"><i class="fa-solid fa-sun"></i></p>
+                    <p class="box-rain"><i class="fa-solid fa-cloud-rain"></i></br>25%</p>
+                </div>
+
+                <div class="box2">
+                    <p class="box-header">Afternoon</p>
+                    <p class="box-temp">28°C</p>
+                    <p class="box-icon"><i class="fa-solid fa-sun"></i></p>
+                    <p class="box-rain"><i class="fa-solid fa-cloud-rain"></i></br>29%</p>
+                </div>
+
+                <div class="box3">
+                    <p class="box-header">Evening</p>
+                    <p class="box-temp">25°C</p>
+                    <p class="box-icon"><i class="fa-solid fa-sun"></i></p>
+                    <p class="box-rain"><i class="fa-solid fa-cloud-rain"></i></br>39%</p>
+                </div>
+
+                <div class="box4">
+                    <p class="box-header">Overninght</p>
+                    <p class="box-temp">26°C</p>
+                    <p class="box-icon"><i class="fa-solid fa-sun"></i></p>
+                    <p class="box-rain"><i class="fa-solid fa-cloud-rain"></i></br>13%</p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div class="footer"> <!-- Stick to bottom, always visible -->
+       <p>&copy; <span id="#date">2022</span>   Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam repudiandae ea tempora doloremque, velit sit </p>
+    </div>
+
+    <script src="https://kit.fontawesome.com/44c19d3cc9.js" crossorigin="anonymous"></script>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
