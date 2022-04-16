@@ -32,7 +32,7 @@ body, html {
     box-sizing: border-box;
     display:flex;
     width:65%;
-    min-height: 120vh;
+    height: 100vh;
 
     
 }
@@ -272,4 +272,55 @@ body, html {
     justify-content: center;
     font-weight: 500;
     color:#000;
+}
+
+@media only screen and (max-width: 1024px) {
+    .middle-content .box-header{
+        font-size: .75em;
+    }
+    .middle-content .box-temp {
+        font-size: 1.2em;
+    }
+    .middle-content .box-icon {
+        font-size: 2em;
+    }
+    .middle-content .box-rain {
+        font-size: 1.2em;
+    }
+    .middle-content .box1, .box2, .box3, .box4 {
+        width:24%
+    }
+    .content {
+        width:100%;
+    }
+    .top-header .h-left {
+        font-size: 0.5em;
+    }
+    .bottom-header .temp-now {
+        font-size: 1.2em;
+    }
+    
+    .bottom-header .wind-now,.bottom-header .preasure-now,.bottom-header .air-now {
+        font-size: 1em;
+    }
+    .footer {
+        font-size: 0.75em;
+    }
+
+    .top-header #city-input {
+        font-size: 10px;
+        width:80%
+    }
+    .top-header #search-city {
+        width:25%;
+        font-size:25px;
+    }
+    .top-header .h-right {
+        width:56%
+    }
+    .top-header .h-left {
+        width:44%;
+    }
+
+
 }

@@ -89,15 +89,54 @@ function Save() {
   form.style.display = 'None';
 }
 
+
+
+
 function Close() {
   let form = document.getElementById("formbox");
-  form.style.display = 'None';
+  form.style.opacity = '0';
+  setTimeout(() => {
+    form.style.display = 'None';
+    form.style.left = '-17%';
+  }, 105);
 }
+/*
+function Open() {
+  let form = document.getElementById("formbox");
+  form.style.display = 'block';
+  setTimeout(() => {
+    form.style.opacity = '1';
+  }, 105);
+
+}
+*/
 
 function Open() {
   let form = document.getElementById("formbox");
   form.style.display = 'block';
+  form.style.opacity = '1';
+  run_animation();
+
 }
+
+
+
+function run_animation() {
+  let form = document.getElementById("formbox");
+  form.style.left = '-17%';
+  temp_value_holder = -100;
+  my_interval = setInterval(() => {
+    if (temp_value_holder >= 50) {
+      clearInterval(my_interval);
+    }else {
+      temp_value_holder = temp_value_holder + 1;
+      form.style.left = `${temp_value_holder}%`;
+    }
+  }, 0.1); // 100 fps
+
+}
+
+
 
 
 function copy(num) {
